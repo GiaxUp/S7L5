@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J3 Project</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Wanna know what music I like? Scroll down!</h1>
+    </header>
+    <div class="container">
+        <div class="row" id="firstRow"></div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <h2>Absolute favourite song:</h2>
+    </div>
+    <div id="secondRow"></div>
+    <div class="d-flex justify-content-center">
+        <h2>Some of my favourite albums:</h2>
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="carousel slide mb-4" data-bs-ride="carousel">
+            <div class="carousel-inner" id="carousel"></div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center mb-4">
+        <button id="Btn" onclick="getSongsByRank()">Tell me ALL the Imagine Dragons songs ordered by rank!</button>
+        <button onclick="allSongs()">Tell me all the Imagine Dragons albums in alphabetical order!</button>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
